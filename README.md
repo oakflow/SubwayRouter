@@ -1,6 +1,6 @@
 # 🚇 SubwayRouter
 
-A high-performance pathfinding system for the London Underground network, implementing both Dijkstra's and A\* algorithms with real-time visualization and performance analysis.
+A high-performance pathfinding system for the [London Underground](https://tfl.gov.uk/modes/tube/) and [DLR](https://tfl.gov.uk/modes/dlr/) network, implementing both Dijkstra's and A\* algorithms with real-time visualization and performance analysis.
 
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://python.org)
 [![Pandas](https://img.shields.io/badge/Pandas-2.3+-green.svg)](https://pandas.pydata.org)
@@ -216,5 +216,12 @@ Uses straight-line geographic distance as admissible heuristic:
 - Never overestimates actual path cost (since actual can't be shorter than straight)
 - Guides search toward goal efficiently
 - Maintains optimality guarantee
+
+## ⚠️ Disclaimers
+
+> While this project primarily focuses on the London Underground, the dataset also contains a subset of DLR stations. These were retained to preserve real-world connectivity at interchange stations.
+
+
+>The station dataset is based on publicly available sources and may not exactly match the current official counts for the London Underground and DLR networks. Minor discrepancies may exist due to station openings, closures, or classification differences.
 
 ---
