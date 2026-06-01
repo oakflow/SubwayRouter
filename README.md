@@ -7,6 +7,8 @@ A high-performance pathfinding system for the [London Underground](https://tfl.g
 [![Matplotlib](https://img.shields.io/badge/Matplotlib-3.10+-orange.svg)](https://matplotlib.org)
 [![NumPy](https://img.shields.io/badge/NumPy-2.4+-red.svg)](https://numpy.org)
 
+<br>
+
 ## Overview
 
 SubwayRouter is a route-finding application that calculates the optimal paths between London Underground stations. The project demonstrates advanced graph theory concepts by implementing two fundamental pathfinding algorithms:
@@ -212,7 +214,9 @@ Uses straight-line geographic distance as admissible heuristic:
 - Guides search toward goal efficiently
 - Maintains optimality guarantee
 
-## ⚠️ Disclaimers
+<br>
+
+## Disclaimers
 
 > While this project primarily focuses on the London Underground, the dataset also contains a subset of DLR stations. These were retained to preserve real-world connectivity at interchange stations.
 
