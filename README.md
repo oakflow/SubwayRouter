@@ -1,13 +1,13 @@
 # 🚇 SubwayRouter
 
-A high-performance pathfinding system for the [London Underground](https://tfl.gov.uk/modes/tube/) and [DLR](https://tfl.gov.uk/modes/dlr/) network, implementing both Dijkstra's and A\* algorithms with real-time visualization and performance analysis.
+A high-performance pathfinding system for the [London Underground](https://tfl.gov.uk/modes/tube/) and [Docklands Light Railway (DLR)](https://tfl.gov.uk/modes/dlr/) network, implementing both Dijkstra's and A\* algorithms with real-time visualization and performance analysis.
 
 [![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)](https://python.org)
-[![Pandas](https://img.shields.io/badge/Pandas-2.3+-green.svg)](https://pandas.pydata.org)
+[![Pandas](https://img.shields.io/badge/Pandas-3.0+-green.svg)](https://pandas.pydata.org)
 [![Matplotlib](https://img.shields.io/badge/Matplotlib-3.10+-orange.svg)](https://matplotlib.org)
 [![NumPy](https://img.shields.io/badge/NumPy-2.4+-red.svg)](https://numpy.org)
 
-## 📋 Overview
+## Overview
 
 SubwayRouter is a route-finding application that calculates the optimal paths between London Underground stations. The project demonstrates advanced graph theory concepts by implementing two fundamental pathfinding algorithms:
 
@@ -16,7 +16,7 @@ SubwayRouter is a route-finding application that calculates the optimal paths be
 
 The system processes real London Underground data with 302 stations and 406 connections, providing both algorithmic analysis and geographic visualizations.
 
-## 📊 Data Used
+## Data Used
 
 The project uses two main CSV datasets:
 
@@ -36,7 +36,7 @@ Contains 406 connections between stations with:
 - Line information
 - Travel time data
 
-## 🚀 Getting Started
+## Getting Started
 
 1. Clone this repository:
 
@@ -52,7 +52,7 @@ cd SubwayRouter
 python -m venv venv
 
 # Activate
-venv\Scripts\activate        # Windows
+venv\Scripts\activate       # Windows
 # source venv/bin/activate  # macOS/Linux
 
 # Install dependencies
@@ -65,7 +65,7 @@ python -m pip install -r requirements.txt
 python router.py
 ```
 
-## 🕹️ Usage
+## Usage
 
 ### Interactive Mode
 
@@ -131,7 +131,7 @@ Performance test completed with 10 successful runs
 Analysis complete!
 ```
 
-## ⚙️ Algorithm Implementation
+## Algorithm Implementation
 
 ### Dijkstra's Algorithm
 
@@ -161,7 +161,7 @@ Analysis complete!
 - Coordinate storage for geographic calculations
 - Bidirectional edge support
 
-## 📈 Performance Analysis
+## Performance Analysis
 
 The system includes comprehensive performance benchmarking:
 
@@ -172,7 +172,7 @@ The system includes comprehensive performance benchmarking:
 
 Typical results show A\* visiting ~60% fewer nodes than Dijkstra and having ~85% faster runtime while maintaining optimal solutions.
 
-## 🗺️ Visualizations
+## Visualizations
 
 ### Network Overview
 
@@ -182,20 +182,15 @@ Typical results show A\* visiting ~60% fewer nodes than Dijkstra and having ~85%
 
 ### Reference Map
 
-The project includes `london_underground.png` - a London Underground network map for visual comparison with the generated network visualizations.
+The project includes `london_underground.png` as well, a London Underground network map for visual comparison with the generated network visualizations.
 
-### Route Highlighting
-
-- Path visualization in distinctive colors
-- Clear route progression
 
 ### Performance Charts
 
 - Side-by-side algorithm comparison
 - Runtime and efficiency bar charts
-- Statistical significance display
 
-## 📐 Mathematical Foundation
+## Mathematical Foundation
 
 ### Haversine Distance Formula
 
