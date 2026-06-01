@@ -462,7 +462,7 @@ def visualize_network(graph, stations_filename, title="Subway Network"):
 
     stations_df = pd.read_csv(stations_filename)
     
-    plt.figure(figsize=(12, 10))
+    plt.figure(figsize=(8, 6))
     plt.scatter(stations_df['longitude'], stations_df['latitude'], c='red', s=50, alpha=0.7, zorder=5)
     
     # draw connections
@@ -496,7 +496,7 @@ def visualize_path(graph, path, stations_filename, title="Subway Route"):
     stations_df = pd.read_csv(stations_filename)
     coordinates = graph.get_coordinates()
     
-    plt.figure(figsize=(12, 10))
+    plt.figure(figsize=(8, 6))
     # STATIONS NOT ON PATH COLOR
     plt.scatter(stations_df['longitude'], stations_df['latitude'], 
                 c='lightgray', s=30, alpha=0.5, zorder=2)
@@ -563,7 +563,7 @@ def compare_algorithms_performance(graph, stations_filename, num_tests=10):
         print(f"Average A* nodes: {results_df['astar_nodes'].mean():.0f}")
         print(f"A* efficiency: {results_df['astar_nodes'].mean()/results_df['dijkstra_nodes'].mean():.2f}")
         
-        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 6))
+        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 4.5))
         
         ax1.bar(['Dijkstra', 'A*'], 
                 [results_df['dijkstra_time'].mean(), results_df['astar_time'].mean()],
